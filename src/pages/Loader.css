@@ -1,0 +1,33 @@
+/* Loader.css */
+.spinner {
+    width: 2.2em; /* Reduced size */
+    height: 2.2em; /* Reduced size */
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 2px solid #444;
+    box-shadow: -10px -10px 10px #4b4b4b,  /* Darkened shadow color */
+                0px -10px 10px 0px #7b7b7b,  /* Darkened shadow color */
+                10px -10px 10px #c35a80, 
+                10px 0 10px #a60a0a, 
+                10px 10px 10px 0px #ff4500, 
+                0 10px 10px 0px #ff8c00, 
+                -10px 10px 10px 0px #ffb700;
+    animation: rot55 0.7s linear infinite;
+}
+  
+.spinnerin {
+    border: 2px solid #444;
+    width: 1.2em; /* Reduced size */
+    height: 1.2em; /* Reduced size */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+@keyframes rot55 {
+    to {
+      transform: rotate(360deg);
+    }
+}

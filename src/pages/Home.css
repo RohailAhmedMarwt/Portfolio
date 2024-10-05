@@ -1,0 +1,108 @@
+/* Fade-in animation */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fade-in 5s ease-in-out;
+}
+
+/* Slide-in-left animation for the image */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-left {
+  animation: slideInLeft 5s ease-in-out;
+}
+
+/* Glow animation for the header text */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #f3661d, 0 0 20px #f3661d, 0 0 10px #f3661d;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff5722, 0 0 30px #ff5722, 0 0 10px #ff5722;
+  }
+}
+.animate-glow-text {
+  animation: glow 5s infinite alternate;
+}
+
+/* Text slide-in effect for the subheading */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-text-slide {
+  animation: slideIn 5s ease-out;
+}
+
+/* Fast fade-in effect for the description */
+@keyframes fadeInFast {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in-fast {
+  animation: fadeInFast 5s ease-in;
+}
+
+/* Button glowing effect */
+.button-glow {
+  position: relative;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+.button-glow:hover {
+  box-shadow: 0 0 20px rgba(243, 102, 29, 0.8), 0 0 50px rgba(243, 102, 29, 0.6);
+}
+
+/* Glowing hover background for button */
+.button-glow:hover span {
+  opacity: 0.004;
+}
+/* Animation for each letter */
+@keyframes letterBounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px); /* Upar bounce */
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-heading {
+  display: inline-block; /* Allows spacing between letters */
+}
+
+/* Styling each letter individually */
+.animate-bounce-letter {
+  display: inline-block;
+  animation: letterBounce 0.6s ease-in-out forwards; /* Animation for each letter */
+  animation-delay: calc(0.1s * var(--index)); /* Sequential delay based on index */
+}

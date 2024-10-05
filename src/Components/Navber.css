@@ -1,0 +1,47 @@
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.instagram-icon {
+  color: #c75b25; /* Updated color to dark orange */
+}
+
+.instagram-icon:hover {
+  animation: bounce 0.5s infinite alternate;
+}
+
+.github-icon:hover {
+  animation: spinnerAnimation 0.5s infinite; /* Update to spinner animation */
+}
+
+@keyframes spinnerAnimation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg); /* Complete rotation for GitHub icon */
+  }
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
