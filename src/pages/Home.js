@@ -23,7 +23,8 @@ const Home = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 to-blue-500 text-white relative overflow-hidden pulsing-background">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[rgb(28,67,159)] text-white relative overflow-hidden pulsing-background">
+
       {/* Hero Section */}
       <div className="text-center p-6 mb-10 relative z-10">
         <h1 className="text-5xl font-bold mb-12 animate-glow-text text-white animate-heading">

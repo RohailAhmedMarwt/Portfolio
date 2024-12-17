@@ -3,27 +3,27 @@ import React, { useState } from "react";
 const projects = [
   {
     name: "E-Commerce Store",
-    image: "/images/pro01.png", // Update image path as needed
-    link: "https://e-commerce-zeta-peach.vercel.app", // Link added here
+    image: "/images/pro01.png",
+    link: "https://e-commerce-zeta-peach.vercel.app",
   },
   {
     name: "Food Delivery App",
-    image: "/images/pro03.png", // Update image path as needed
-    link: "https://crud-plum-two.vercel.app", // Replace with actual link
+    image: "/images/pro03.png",
+    link: "https://crud-plum-two.vercel.app",
   },
   {
     name: "Qlab",
-    image: "/images/qlab1.png", // Update image path as needed
+    image: "/images/qlab1.png",
     link: "https://q-lab.vercel.app",
   },
   {
     name: "CRUD Application",
-    image: "/images/div.png", // Update image path as needed
-    link: "https://crud-plum-two.vercel.app", // Link added here
+    image: "/images/div.png",
+    link: "https://crud-plum-two.vercel.app",
   },
   {
     name: "NetFlix",
-    image: "/images/net2.png", // Update image path as needed
+    image: "/images/net2.png",
     link: "https://net-flix-iota.vercel.app",
   },
 ];
@@ -35,20 +35,19 @@ const Projects = () => {
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
     setShowTooltip(true);
-    // Hide the tooltip after 3 seconds
     setTimeout(() => {
       setShowTooltip(false);
     }, 3000);
   };
 
   return (
-    <div className="projects-section text-center p-10 bg-transparent bg-gradient-to-r from-purple-500 to-blue-500 relative">
+    <div className="projects-section text-center p-10 bg-transparent from-purple-500 to-blue-500 relative">
       <h2 className="text-4xl font-bold mb-12 animate-glow-text text-white">
         My Projects
       </h2>
 
       {/* Top two projects */}
-      <div className="grid grid-cols-2 gap-8 mx-auto max-w-screen-lg mb-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-screen-lg mb-4">
         {projects.slice(0, 2).map((project, index) => (
           <div
             key={index}
@@ -63,8 +62,8 @@ const Projects = () => {
             />
             <h3 className="text-lg font-bold text-[#f3661d] mb-2">{project.name}</h3>
             <a
-              href={project.link} // Use the link from the project object
-              target="_blank" // Open in new tab
+              href={project.link}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white bg-[#f3661d] py-1 px-3 rounded-full transition-all duration-300 ease-in-out transform hover:bg-[#d3571a] hover:shadow-lg hover:scale-105"
             >
@@ -80,7 +79,7 @@ const Projects = () => {
       </div>
 
       {/* Last three projects */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-4 mx-auto max-w-screen-lg">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-4 mx-auto max-w-screen-lg">
         {projects.slice(2).map((project, index) => (
           <div
             key={index + 2}
@@ -95,8 +94,8 @@ const Projects = () => {
             />
             <h3 className="text-lg font-bold text-[#f3661d] mb-2">{project.name}</h3>
             <a
-              href={project.link} // Use the link from the project object
-              target="_blank" // Open in new tab
+              href={project.link}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white bg-[#f3661d] py-1 px-3 rounded-full transition-all duration-300 ease-in-out transform hover:bg-[#d3571a] hover:shadow-lg hover:scale-105"
             >

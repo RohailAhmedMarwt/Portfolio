@@ -74,7 +74,7 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <div className="bg-gradient-to-r from-purple-500 to-blue-500 min-h-screen flex flex-col items-center justify-center p-6">
+      <div className=" from-purple-500 to-blue-500 min-h-screen flex flex-col items-center justify-center p-6">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-bold mb-12 animate-glow-text text-white">My Skills</h2>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">

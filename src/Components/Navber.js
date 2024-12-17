@@ -10,7 +10,7 @@ const Navber = () => {
     };
 
     return (
-        <nav className="bg-transparent bg-gradient-to-r from-purple-500 to-blue-500 border-gray-200">
+        <nav className="bg-[rgb(28,67,159)] border-gray-200">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo Link */}
                 <a href="/" className="flex items-center">
